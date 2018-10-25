@@ -1,0 +1,704 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	box-sizing: content-box;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+	div.header{
+		width: 100%;
+		background-color: black;
+	}
+	div.header .header_son .hs2 ul>li a{
+		color: white;
+	}
+	div.header .header_son .hs2 ul>li:hover{
+		border: 2px solid white;
+		border-left: 0;
+		border-right: 0;
+	}
+	div.xxlbt .xxlbt_son h1{
+		color: #E91E63;
+	}
+	div.services .services_son h1{
+		color: #071EA0;
+	}
+	div.services .services_son .ss a{
+		color: #EA1E7A;
+		border: 2px solid #EA1E7A;
+	}
+	div.services .services_son .ss p{
+		color: #999999;
+	}
+	
+     div.newgame .newgame_son h1{
+     	font-weight: 500;
+     	color: #E91E63;
+     }
+/*pc端*/
+@media (min-width:1200px){
+	/*Game Zone*/
+	div.header .header_son{
+		width: 1140px;
+		height: 130px;
+		margin: 0 auto;
+		padding-top: 20px;
+	}
+	div.header .header_son .hs1 h1{
+		width: 20%;
+		float: left;
+		color: white;
+		font-family: "calisto mt";
+	}
+	div.header .header_son .hs1 img{
+		width: 69.78px;
+		height: 69.78px;
+		margin-left:10px;
+		vertical-align: middle;
+	}
+	/*home about*/
+	div.header .header_son .hs2 ul{
+		width: 522.63px;
+		margin-top: 20px;
+		float: right;
+	}
+	div.header .header_son .hs2 ul>li{
+		margin-left:40px;
+		line-height:30px;
+		float: left;
+	}
+	div.header .header_son .hs2 ul:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	/*大屏轮播图*/
+	div.dplbt{
+		position: relative;
+		margin-top: 2px;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+	div.dplbt .ftp{
+		width: 100%;
+	}
+	div.dplbt .ftp .lub img{
+		height: auto; width: auto\9; width:100%;
+	}
+	div.dplbt .aa{
+		display: block;
+		width: 38px;
+		height: 61px;
+		color: white;
+		line-height: 60px;
+		text-align: center;
+		background-color: gray;
+	}
+	div.dplbt .a1{
+		position: absolute;
+		top: 50%;
+		left: 1%;
+	}
+	div.dplbt .a2{
+		position: absolute;
+		top: 50%;
+		right: 1%;
+	}
+	/*小型轮播图*/
+	div.xxlbt{
+		width: 100%;
+	}
+	div.xxlbt .xxlbt_son{
+		width: 1170px;
+		margin: 0 auto;
+	}
+	div.xxlbt .xxlbt_son h1{
+		margin: 1em auto 1em;
+		text-align: center;
+	}
+	div.xxlbt .xxlbt_son .xs{
+		width: 1140px;
+		height: 388.34px;
+		margin: 0 auto;
+	}
+	div.xxlbt .xxlbt_son .xs .xs_son{
+		width: calc(263px*8);
+	}
+	div.xxlbt .xxlbt_son .xs .xs_son h2{
+		text-align: center;
+	}
+	div.xxlbt .xxlbt_son .xs .xs_son ul li{
+		margin-left: 18px;
+		float: left;
+	}
+	div.xxlbt .xxlbt_son .xs .xs_son ul:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	/*Services-*/
+	div.services{
+		width: 100%;
+		height: 453px;
+		margin-top: 4em;
+		padding-top:6em;
+		background-color: #F4F4F4;
+	}
+	div.services .services_son{
+		width: 1170px;
+		height: 353px;
+		margin: 0 auto;
+	}
+	div.services .services_son h1{
+		text-align: center;
+	}
+	div.services .services_son .ss .sso{
+		float: left;
+	}
+	div.services .services_son .ss .ss1{
+		width: 285px;
+		height: 269px;
+		text-align: center;
+	}
+	div.services .services_son .ss a{
+		width: 110.27px;
+		height: 30px;
+		text-align: center;
+		padding-top: 5px;
+		display: inline-block;
+	}
+	div.services .services_son .ss .sso:hover a{
+		color: white;
+		border: 0;
+		background-color: blue;
+	}
+    div.services .services_son .ss .sso:hover img{
+		color: white;
+		border: 0;
+		border-radius: 50%;
+		background-color: blue;
+	}
+	div.services .services_son .ss img,h2,p,a{
+		margin-top:20px;
+	}
+	div.services .services_son .ss h2{
+		font-weight: 500 ;
+	}
+	div.services .services_son .ss .ss2{
+		width: 285px;
+		height: 269px;
+		text-align: center;
+	}
+	div.services .services_son .ss .ss3{
+		width: 285px;
+		height: 269px;
+		text-align: center;
+	}
+	div.services .services_son .ss .ss4{
+		width: 285px;
+		height: 269px;
+		text-align: center;
+	}
+	/*New Games*/
+     div.newgame{
+     	width: 100%;
+     	height: 750px;
+     	padding-top: 4em;
+     }
+     div.newgame .newgame_son{
+     	width: 1170px;
+     	height: 650px;
+     	margin: 0 auto;
+     	border: 1px solid black;
+     }
+     div.newgame .newgame_son h1{
+     	font-weight: 500;
+     	text-align: center;
+     	color: #E91E63;
+     }
+     div.newgame .newgame_son .gamep {
+     	padding-left: 20px;
+     }
+     div.newgame .newgame_son .gamep img{
+     	width: 255px;
+     	height: 255px;
+     	margin: 15px;
+     	float: left;
+     }
+     /*左右轮播*/
+    div.zylb{
+    	width: 100%;
+    	height:1200px;
+    	background-image:url(../img/sbbg.jpg);
+    }
+    /*结尾*/
+   div.footer{
+   	width: 100%;
+   	height: 400px;
+   	padding: 40px 0 40px 0;
+   }
+   div.footer .wsjw{
+   	text-align: center;
+   	border-top: 1px dashed black;
+   	padding-top: 30px;
+   }
+   div.footer .fts{
+   	width: 1170px;
+   	height: 330px;
+   	margin: 0 auto;
+   }
+   div.footer .fts .fs{
+   	float: left;
+   	margin-left: 8px;
+   }
+   div.footer .fts .fs1{
+   	width: 285px;
+   	height: 279px;
+   }
+   div.footer .fts .fs1 h1{
+   	font-weight: 400;
+   }
+   div.footer .fts .fs1 .ff{
+   	margin-top: 30px;
+   }
+   div.footer .fts .fs2{
+   	width: 475px;
+   	height: 246.5px;
+   }
+   div.footer .fts .fs2 ul li{
+   	margin-left: 12px;
+   	  float: left;
+   	  padding: 10px;
+   }
+   div.footer .fts .fs2 ul li img{
+   	  width: 81.25px;
+   	  height: 81.25px;
+   	  padding-top:3px ;
+   }
+   div.footer .fts .fs3{
+   	width: 380px;
+   	height: 241px;
+   }
+   div.footer .fts .fs3 .ff1 h3{
+   	color: #EA296A;
+   }
+   div.footer .fts .fs3 img{
+   	width: 42px;
+   	height: 30.84px;
+   }
+   div.footer .fts .fs3 .fsf p{
+   	    color: #7F7F7F;
+   }
+    div.footer .fts .fs3 .ff2 p{
+    	line-height: 30px;
+    }
+   div.footer .fts .fs3 .ff3 p{
+   	   padding-top: 10px;
+   	   line-height: 30px;
+   }
+}
+/*pai的端*/
+@media (min-width:768px) and (max-width:1199px){
+	/*最上面*/
+	div.header .header_son{
+		width: 500px;
+		height: 100px;
+		margin: 0 auto;
+	}
+	div.header .header_son .hs1 h1{
+		color: white;
+		padding-top: 20px;
+		font-size:20px;
+	}
+	div.header .header_son .hs1 h1 img{
+		width: 40px;
+		vertical-align: middle;
+	}
+	div.header .header_son .hs2{
+		width: 320px;
+		float: right;
+		margin-top: -30px;
+	}
+	div.header .header_son .hs2 ul{
+		margin-left: 12px;
+	}
+	div.header .header_son .hs2 ul li{
+		margin-left: 12px;
+		float: left;
+	}
+	div.header .header_son .hs2 ul li:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	/*大屏轮播图*/
+	div.dplbt{
+		position: relative;
+		margin-top: 2px;
+		width: 100%;
+	}
+	div.dplbt .ftp{
+		width: 100%;
+	}
+	div.dplbt .ftp .lub img{
+		height: auto; width: auto\9; width:100%;
+	}
+	div.dplbt .aa{
+		display: block;
+		width:20px;
+		height:30px;
+		background-color: gainsboro;
+		text-align: center;
+		line-height: 30px;
+	}
+	div.dplbt .a1{
+		position: absolute;
+		top: 45%;
+		left: 1%;
+	}
+	div.dplbt .a2{
+		position: absolute;
+		top: 45%;
+		right: 1%;
+	}
+	/*小型轮播图*/
+	div.xxlbt{
+		width: 100%;
+	}
+	div.xxlbt .xxlbt_son{
+		width: 90%;
+		margin: 0 auto;
+	}
+	div.xxlbt .xxlbt_son h1{
+		text-align: center;
+	}
+	div.xxlbt .xxlbt_son .xs {
+		width: 100%;
+	}
+	div.xxlbt .xxlbt_son .xs ul li{
+		float: left;
+		margin-top: 20px;
+		margin-left: 50px;
+	}
+	div.xxlbt .xxlbt_son .xs ul:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	div.xxlbt .xxlbt_son h2{
+		text-align: center;
+	}
+	/*Services*/
+	div.services{
+		width: 100%;
+	}
+	div.services .services_son{
+		width: 90%;
+		margin: 0 auto;
+	}
+	div.services .services_son h1{
+		text-align: center;
+	}
+	div.services .services_son .ss{
+	       width: 90%;
+	       margin: 0 auto;
+	}
+	div.services .services_son .ss .sso{
+		width: 40%;
+		float: left;
+		text-align: center;
+		margin-top: 40px;
+		margin-left:40px;
+	}
+	div.services .services_son .ss .sso p{
+		color: #AAAAAA;
+	}
+	div.services .services_son .ss .sso a{
+		color: #E91E63;
+		display: inline-block;
+		margin-top: 20px;
+		border: 1px solid #E91E63;
+	}
+	div.services .services_son .ss:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	/*New Games*/
+	div.newgame{
+		width: 100%;
+		margin-top: 20px;
+	}
+	div.newgame .newgame_son{
+		width: 90%;
+		margin: 0 auto;
+	}
+	div.newgame .newgame_son h1{
+		text-align: center;
+	}
+	div.newgame .newgame_son .gamep{
+		width: 90%;
+		margin: 0 auto;
+	}
+	div.newgame .newgame_son .gamep:after{
+		content:"";
+		display: block;
+		clear: both;
+	}
+	div.newgame .newgame_son .gamep .ng{
+		float: left;
+		margin: 5px;
+	}
+	/*左右轮播*/
+	div.zylb{
+		width: 100%;
+		margin-top: 20px;
+	}
+	div.zylb .zyb{
+		width: 90%;
+		margin: 0 auto;
+	}
+	div.zylb .zyb .zys1{
+		width: 100%;
+		margin: 0 auto;
+	}
+	div.zylb .zyb .zys1{
+		text-align: center;
+	}
+	div.zylb .zyb .zys1 h3,p,a{
+		margin-top: 10px;
+	}
+	div.zylb .zyb .zys1 a{
+		width: 13%;
+		height: 20%;
+		margin: 10px auto 0;
+		display: block;
+		border: 2px solid black;
+	}
+	/*结尾*/
+	div.footer{
+		margin-top:20px;
+		width: 100%;
+	}
+	div.footer .fts{
+		width: 90%;
+		margin: 0 auto;
+	}
+	div.footer .fts .fs1{
+		width: 80%;
+		margin: 0 auto;
+	}
+	div.footer .fts h1{
+		text-align: center;
+	}
+	div.footer .fts .fs1 .ff{
+		margin-top: 10px;
+		float: left;
+	}
+	div.footer .fts .fs1 .ff1{
+		margin-left: 110px;
+	}
+	div.footer .fts .fs1 .ff2{
+		margin-left: 80px;
+	}
+	div.footer .fts .fs1 .ff3{
+		margin-left: 80px;
+	}
+	div.footer .fts .fs1 .ff4{
+		   margin-left: 40px;
+	}
+	div.footer .fts .fs1:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	div.footer .fts .fs2{
+		width: 100%;
+		margin-top: 20px;
+	}
+	div.footer .fts .fs2 img{
+		margin-left: 30px;
+		margin-top: 30px;
+		float: left;
+	}
+	div.footer .fts .fs2:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	div.footer .fts .fs3{
+		width: 100%;
+		margin-top: 20px;
+	    text-align: center;
+	}
+	div.footer .fts .fs3 h3 img{
+		vertical-align: middle;
+	}
+	div.footer .wsjw{
+		text-align: center;
+		font-size: 14px;
+		border-top: 1px dashed black;
+		padding-top:10px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+}
+/*手机端*/
+@media (min-width:360px) and (max-width:767px){
+	/*最上面*/
+	div.header .header_son{
+		width: 98%;
+		margin: 0 auto;
+	}
+	div.header .header_son .hs1 h1{
+		position: relative;
+		text-align: center;
+		color: white;
+	}
+	div.header .header_son .hs1 h1 img{
+		width: 10%;
+	}
+	div.header .header_son .hs2 ul li{
+		margin-top: 20px;
+		margin-left: 20px;
+		float: left;
+	}
+	div.header .header_son .hs2 ul:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	/*大屏轮播图*/
+	div.dplbt{
+		position: relative;
+		width: 100%;
+	}
+	div.dplbt .ftp{
+		width: 100%;
+	}
+	div.dplbt .ftp .lub{
+		width: 100%;
+	}
+	div.dplbt .ftp .lub img{
+		width: 100%;
+		height: auto;
+	}
+	div.dplbt .aa{
+		display: inline-block;
+		background-color: grey;
+		width: 15px;
+		height: 30px;
+		color: white;
+		text-align: center;
+		line-height: 30px;
+	}
+	div.dplbt .a1{
+		position: absolute;
+		top: 40%;
+		left: 1%;
+	}
+	div.dplbt .a2{
+		position: absolute;
+		top: 40%;
+		right: 1%;
+	}
+	/*小型轮播图*/
+	div.xxlbt{
+		width: 100%;
+	}
+	div.xxlbt .xxlbt_son{
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	div.xxlbt .xxlbt_son h1{
+		margin-bottom: 10px;
+	}
+	div.xxlbt .xxlbt_son .xs .xs_son ul li{
+		margin-top: 15px;
+	}
+	/*Services*/
+	div.services{
+		width: 100%;
+	}
+	div.services .services_son{
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	div.services .services_son .ss a{
+		width: 90px;
+		margin: 20px auto 0;
+		display: block;
+	}
+	/*New Games*/
+	div.newgame{
+		width: 100%;
+		margin-top: 20px;
+	}
+	div.newgame .newgame_son{
+		width: 90%;
+		text-align: center;
+		margin: 0 auto;
+	}
+	div.newgame .newgame_son .gamep .ng{
+		margin-top: 10px;
+	}
+	/*左右轮播*/
+	div.zylb{
+		width: 100%;
+	}
+	div.zylb .zyb{
+		width: 90%;
+		margin: 0 auto;
+	}
+	div.zylb .zyb .zys1{
+		text-align: center;
+	}
+	div.zylb .zyb .zys1 a{
+		width: 91px;
+		height: 25px;
+		line-height:40px;
+		border: 2px solid purple;
+	}
+	/*结尾*/
+	div.footer{
+		width: 100%;
+		margin-top:20px;
+		border: 1px solid black;
+	}
+	div.footer .fts{
+		width: 90%;
+		margin: 0 auto;
+		border: 1px solid black;
+	}
+	div.footer .fts .fs{
+		text-align: center;
+	}
+	div.footer .fts .fs2 img{
+		width: 40%;
+		height: 40%;
+		margin-left: 22px;
+		float: left;
+	}
+	div.footer .fts .fs2:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	div.footer .fts .fs3 .fsf p{
+		line-height: 30px;
+	}
+	div.footer .wsjw{
+		border-top:1px dashed black;
+		padding-top:20px;
+		margin-top: 20px;
+		text-align: center;
+	}
+}  
